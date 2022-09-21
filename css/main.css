@@ -2,6 +2,7 @@
     --main-color: #10cab7;
     --secondary-color: #2c4755;
     --section-background: #f6f6f6;
+    overflow-y: s;
 }
 
 html {
@@ -39,6 +40,15 @@ body {
     text-align: center;
     color: #797979;
 }
+
+.scrol-to-top{
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+  
 
 /* end glopal rules  */
 
@@ -92,7 +102,7 @@ header nav .secs:hover ul {
     display: flex;
 }
 
-a {
+nav a {
     text-decoration: none;
     font-size: 1.2em;
     color: var(--main-color);
@@ -100,7 +110,7 @@ a {
     position: relative;
 }
 
-a::after {
+nav a::after {
     content: "";
     width: 0;
     height: 2px;
@@ -111,7 +121,7 @@ a::after {
     transition: 0.5s;
 }
 
-a:hover:after {
+nav a:hover:after {
     width: 100%;
 }
 
@@ -145,6 +155,8 @@ header section p {
     font-size: 20pt;
     text-align: center;
 }
+
+
 
 /* end header  */
 
@@ -250,6 +262,7 @@ header section p {
     right: calc(15% + -50px);
     z-index: -1;
 }
+
 
 /* end services  */
 
